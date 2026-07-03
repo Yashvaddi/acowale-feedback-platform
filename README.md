@@ -3,8 +3,8 @@
 ## Live URLs
 
 - **Frontend Application:** [https://acowale-feedback-platform-web.vercel.app](https://acowale-feedback-platform-web.vercel.app)
-- **Backend API Docs (Swagger):** [https://acowale-feedback-api.onrender.com/api/docs](https://acowale-feedback-api.onrender.com/api/docs)
-- **Health Check:** [https://acowale-feedback-api.onrender.com/health](https://acowale-feedback-api.onrender.com/health)
+- **Backend API Docs (Swagger):** [https://acowale-feedback-platform.onrender.com/api/docs](https://acowale-feedback-platform.onrender.com/api/docs)
+- **Health Check:** [https://acowale-feedback-platform.onrender.com/health](https://acowale-feedback-platform.onrender.com/health)
 
 ## Important Routes & Credentials
 

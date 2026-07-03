@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: feedback-api
+    env: image
+    image:
+      url: docker.io/yashv97/acowale-feedback:api-latest
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: feedback-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: feedback-redis
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: feedback-web
+    env: image
+    image:
+      url: docker.io/yashv97/acowale-feedback:web-latest
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: feedback-api
+          property: url
+
+  - type: redis
+    name: feedback-redis
+    ipAllowList: []
+    plan: free
+
+databases:
+  - name: feedback-db
+    databaseName: feedback_db
+    user: feedback_user
+    plan: free

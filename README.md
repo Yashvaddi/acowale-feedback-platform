@@ -2,7 +2,7 @@
 
 ## Live URLs
 
-- **Frontend Application:** [acowale-feedback-platform-web.vercel.app](acowale-feedback-platform-web.vercel.app)
+- **Frontend Application:** [https://acowale-feedback-platform-web.vercel.app](https://acowale-feedback-platform-web.vercel.app)
 - **Backend API Docs (Swagger):** [https://acowale-feedback-api.onrender.com/api/docs](https://acowale-feedback-api.onrender.com/api/docs)
 - **Health Check:** [https://acowale-feedback-api.onrender.com/health](https://acowale-feedback-api.onrender.com/health)
 

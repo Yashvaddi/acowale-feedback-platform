@@ -1,9 +1,10 @@
 services:
   - type: web
     name: feedback-api
-    env: docker
+    env: node
     rootDir: apps/api
-    dockerfilePath: Dockerfile
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
 
 
   # - type: web

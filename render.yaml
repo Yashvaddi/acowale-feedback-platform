@@ -1,9 +1,9 @@
 services:
   - type: web
     name: feedback-api
-    env: image
-    image:
-      url: docker.io/yashv97/acowale-feedback:api-latest
+    env: docker
+    dockerfilePath: ./apps/api/Dockerfile
+    dockerContext: ./apps/api
     envVars:
       - key: DATABASE_URL
         fromDatabase:

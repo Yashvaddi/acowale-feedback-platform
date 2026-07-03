@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export default function DashboardPage() {
   
-  const { data, isLoading } = useQuery({
+  const { data } = useQuery({
     queryKey: ['analyticsSummary'],
     queryFn: getAnalyticsSummary,
     refetchInterval: 30000,

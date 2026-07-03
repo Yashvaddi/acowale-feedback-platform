@@ -1,5 +1,5 @@
 import { Feedback } from '../types';
-import { ArrowRight, Search, Filter, Download, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, Download, ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
@@ -27,17 +27,6 @@ const CATEGORY_NAMES: Record<string, string> = {
   OTHER: 'Other',
 };
 
-const STATUS_COLORS: Record<string, string> = {
-  OPEN: 'bg-red-50 text-red-600',
-  IN_PROGRESS: 'bg-orange-50 text-orange-600',
-  RESOLVED: 'bg-emerald-50 text-emerald-600',
-};
-
-const STATUS_NAMES: Record<string, string> = {
-  OPEN: 'Open',
-  IN_PROGRESS: 'In Progress',
-  RESOLVED: 'Resolved',
-};
 
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
@@ -61,7 +50,7 @@ export default function RecentFeedbackTable({ initialData }: RecentFeedbackTable
   const [sortBy, setSortBy] = useState<string>('createdAt');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
 
-  const { data, isLoading } = useQuery({
+  const { data } = useQuery({
     queryKey: ['feedbacks', page, debouncedSearch, category, rating, dateRange, sortBy, sortOrder],
     queryFn: () => getFeedbacks(page, 10, debouncedSearch, category, rating ? Number(rating) : undefined, dateRange, sortBy, sortOrder),
     placeholderData: (prev) => prev,

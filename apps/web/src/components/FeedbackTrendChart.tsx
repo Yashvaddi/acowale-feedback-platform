@@ -2,7 +2,6 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { ChevronDown, Check } from 'lucide-react';
 import { TrendData } from '../types';
 import { useState } from 'react';
-import { cn } from '../utils/cn';
 
 interface FeedbackTrendChartProps {
   data: TrendData[];

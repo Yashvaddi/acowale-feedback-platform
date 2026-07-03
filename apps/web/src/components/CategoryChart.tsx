@@ -1,5 +1,4 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
-import { ChevronDown } from 'lucide-react';
 
 interface CategoryChartProps {
   data: { category: string; count: number }[];

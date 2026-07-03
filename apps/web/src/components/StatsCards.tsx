@@ -1,4 +1,4 @@
-import { MessageSquare, CheckCircle2, Clock, Star, ArrowUp, ArrowDown } from 'lucide-react';
+import { MessageSquare, CheckCircle2, Clock, Star } from 'lucide-react';
 
 interface StatsCardsProps {
   total: number;

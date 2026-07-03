@@ -21,17 +21,17 @@ services:
       - key: NODE_ENV
         value: production
 
-  - type: web
-    name: feedback-web
-    env: image
-    image:
-      url: docker.io/yashv97/acowale-feedback:web-latest
-    envVars:
-      - key: VITE_API_URL
-        fromService:
-          type: web
-          name: feedback-api
-          property: url
+  # - type: web
+  #   name: feedback-web
+  #   env: image
+  #   image:
+  #     url: docker.io/yashv97/acowale-feedback:web-latest
+  #   envVars:
+  #     - key: VITE_API_URL
+  #       fromService:
+  #         type: web
+  #         name: feedback-api
+  #         property: url
 
   - type: redis
     name: feedback-redis

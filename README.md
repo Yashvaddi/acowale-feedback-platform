@@ -4,7 +4,7 @@
 
 - **Frontend Application:** [https://acowale-feedback-platform-web.vercel.app](https://acowale-feedback-platform-web.vercel.app)
 - **Backend API Docs (Swagger):** [https://acowale-feedback-platform.onrender.com/api/docs](https://acowale-feedback-platform.onrender.com/api/docs)
-- **Health Check:** [https://acowale-feedback-platform.onrender.com/health](https://acowale-feedback-platform.onrender.com/health)
+- **Health Check:** [https://acowale-feedback-platform.onrender.com/api/v1/health](https://acowale-feedback-platform.onrender.com/api/v1/health)
 
 ## Important Routes & Credentials
 
